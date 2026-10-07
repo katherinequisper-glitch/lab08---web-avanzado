@@ -1,0 +1,16 @@
+{
+  "name": "desplegando-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "katherinequisper-glitch <katherine.quispe.r@tecsup.edu.pe>",
+  "license": "MIT",
+  "private": false,
+   "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "dotenv": "^18.0.6",
+    "nodemon": "^3.1.14"
+  }
+}
