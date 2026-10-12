@@ -1,0 +1,172 @@
+:root {
+  --accent: #8b5cf6;
+  --accent-light: #a78bfa;
+  --bg-dark: #0f0f14;
+  --bg-card: #1a1a22;
+  --text-muted: #9ca3af;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: #e5e7eb;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar-custom {
+  background-color: #14141b;
+  border-bottom: 1px solid #26262f;
+}
+
+.navbar-custom .nav-link {
+  color: #d1d5db;
+  font-weight: 500;
+}
+
+.navbar-custom .nav-link.active,
+.navbar-custom .nav-link:hover {
+  color: var(--accent-light);
+}
+
+.navbar-brand {
+  color: var(--accent-light) !important;
+  font-weight: 700;
+}
+
+/* Hero */
+.hero-section {
+  padding: 100px 0 70px;
+  background: radial-gradient(circle at top right, rgba(139, 92, 246, 0.15), transparent 60%);
+}
+
+.hero-section h1 {
+  font-weight: 700;
+}
+
+.hero-section .highlight {
+  color: var(--accent-light);
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  border: none;
+  color: #fff;
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-light);
+  color: #0f0f14;
+}
+
+.btn-outline-accent {
+  border: 1px solid var(--accent);
+  color: var(--accent-light);
+}
+
+.btn-outline-accent:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+/* Sections */
+.section-title {
+  color: var(--accent-light);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border-left: 4px solid var(--accent);
+  padding-left: 12px;
+}
+
+.card-custom {
+  background-color: var(--bg-card);
+  border: 1px solid #26262f;
+  border-radius: 10px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card-custom:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.badge-skill {
+  background-color: #26262f;
+  color: var(--accent-light);
+  border: 1px solid var(--accent);
+  margin: 3px;
+  padding: 6px 12px;
+  font-weight: 500;
+}
+
+/* Timeline experiencia */
+.timeline-item {
+  border-left: 2px solid var(--accent);
+  padding-left: 20px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+
+.timeline-date {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  background-color: #14141b;
+  border-top: 1px solid #26262f;
+  color: var(--text-muted);
+  padding: 25px 0;
+}
+
+footer a {
+  color: var(--accent-light);
+  text-decoration: none;
+}
+
+/* Contacto */
+.form-control {
+  background-color: var(--bg-card);
+  border: 1px solid #26262f;
+  color: #e5e7eb;
+}
+
+.form-control:focus {
+  background-color: var(--bg-card);
+  color: #e5e7eb;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(139, 92, 246, 0.25);
+}
+
+.form-label {
+  color: var(--text-muted);
+}
+
+/* Confirmación */
+.confirm-icon {
+  font-size: 4rem;
+  color: var(--accent-light);
+}
+
+/* Animación de entrada */
+.fade-in {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
